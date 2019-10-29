@@ -1,0 +1,36 @@
+@font-face {
+    font-family: halloween;
+    src: url("../fuentes/Halloween.ttf");
+  }
+  #wrapper {background-image: url("../imagenes/fondo1.png");
+        width: 1108px;
+        height: 623px;
+        margin: 10px auto; /*Centra el wrapper*/
+        font-family: 'Creepster', cursive;
+        position: relative;
+        }
+  body {background-color: black;}
+
+  #titulo {font-size: 2em;
+          color: darkorange;
+          position:absolute;
+          top:10px;
+          left:30px;
+          }
+  #p1 {position: absolute;
+      top:535px;
+      left:350px;
+      font-size: 40px;
+      font-family: 'halloween';
+      color: red;}
+  #zombie {position: absolute;
+          top: 400px;
+          left: 460px;
+          visibility: hidden;
+          }
+  #door { width: 70px;
+          height: 90px;
+          position: absolute;
+          top: 402px;
+          left: 540px;
+          }
