@@ -11,12 +11,27 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="javascripts/vanillajavascript.js"></script>
 </head>
-<body>
+<body onload="sonar('backgroundmusic')">
     <div id="wrapper">
-      <h1 id="titulo">Scary Halloween Party</h1>
       <p id="p1">Don't knock the door</p>
-      <img id="zombie" src="imagenes/zombie.gif" height="200" onclick="hide('zombie')">
-      <div id="door" onclick="show('zombie')"></div>
+      <img id="zombie" src="imagenes/zombie.gif" height="100" onclick="hide('zombie'); parar('zombiesound')">
+      <div id="door" onclick="show('zombie'); sonar('zombiesound')"></div>
+      <div id="surprisepumpkin" onclick="show('screamer'); sonar('screamersound')"></div>
     </div>
+    <div id="backgroundeffects">
+      <img id="skeleton" src="imagenes/bone-drawing-aesthetic.gif">
+      <img id="moon" src="imagenes/moon.gif">
+      <img id="halloweentext" src="imagenes/halloweentext.gif">
+      <img id="screamer" src="imagenes/screamer.gif" height="700" width="1600" onclick="hide('screamer'); parar('screamersound')">
+    </div>
+    <audio onloadstart="this.volume=0.015" id="backgroundmusic" loop>
+      <source src="sonidos/lullaby.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="zombiesound" loop>
+      <source src="sonidos/zombiesound.mp3" type="audio/mpeg">
+    </audio>
+    <audio onloadstart="this.volume=10" id="screamersound">
+      <source src="sonidos/screamersound.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
