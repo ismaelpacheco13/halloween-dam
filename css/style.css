@@ -10,6 +10,9 @@
         position: relative;
         }
 body {background-color: #000407;
+        background-image: url(../imagenes/fondobody.png);
+        background-repeat: no-repeat;
+        background-size: 1920px 635px;
         overflow: hidden;}    
 #titulo {font-size: 2em;
         color: darkorange;
@@ -19,13 +22,13 @@ body {background-color: #000407;
           }
 #p1 {position: absolute;
       top:535px;
-      left:350px;
+      left:180px;
       font-size: 40px;
       font-family: 'halloween';
         color: red;}
 #zombie {position: absolute;
         top: 400px;
-        left: 460px;
+        left: 500px;
         visibility: hidden;
         cursor: crosshair;
         }
@@ -54,6 +57,15 @@ body {background-color: #000407;
                 left: 512px;
                 position: absolute;
               }
+#invited1 {top: 820px;
+        left: 552px;
+        position: absolute;}
+#invited2 {top: 880px;
+        left: 352px;
+        position: absolute;}
+#invited3 {top: 940px;
+        left: 582px;
+        position: absolute;}
 #bats {top: 400px;
       left: 500px;
       position: absolute;}
@@ -61,3 +73,6 @@ body {background-color: #000407;
         position: absolute;
         top: 100px;
         left: 600px;}
+#lightning {position: absolute;
+        top: 630px;
+        left: 0px;}

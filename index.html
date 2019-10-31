@@ -7,13 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nosifer&display=swap" rel="stylesheet"> 
     <title>Web Halloween</title>
-    <!--Esta presentación no es responsive, es para ordenador-->
+    <!--Esta presentación no es responsive, es para ordenador (resolución 1920x1080)-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="javascripts/vanillajavascript.js"></script>
 </head>
 <body onload="sonar('backgroundmusic')">
     <div id="wrapper">
-      <p id="p1">Don't knock the door</p>
+      <p id="p1">Don't dare to knock the door nor touch my pumpkins</p>
       <img id="zombie" src="imagenes/zombie.gif" height="100" onclick="hide('zombie'); parar('zombiesound')">
       <div id="door" onclick="show('zombie'); sonar('zombiesound')"></div>
       <div id="surprisepumpkin" onclick="show('screamer'); sonar('screamersound')"></div>
@@ -22,7 +22,11 @@
       <img id="skeleton" src="imagenes/bone-drawing-aesthetic.gif">
       <img id="moon" src="imagenes/moon.gif">
       <img id="halloweentext" src="imagenes/halloweentext.gif">
+      <img id="invited1" src="imagenes/invited1.gif">
+      <img id="invited2" src="imagenes/invited2.gif">
+      <img id="invited3" src="imagenes/invited3.gif">
       <img id="screamer" src="imagenes/screamer.gif" height="700" width="1600" onclick="hide('screamer'); parar('screamersound')">
+      <img id="lightning" src="imagenes/rayo.gif" height="570" width="350">
     </div>
     <audio onloadstart="this.volume=0.015" id="backgroundmusic" loop>
       <source src="sonidos/lullaby.mp3" type="audio/mpeg">
